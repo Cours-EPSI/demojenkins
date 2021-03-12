@@ -36,3 +36,7 @@ task checkstyleMain (type: Checkstyle, overwrite: true) {
     classpath = fileTree(classesJava)
     configFile = file("${rootProject.rootDir}/config/checkstyle/checkstyle.xml")
 }
+
+spotbugs {
+    ignoreFailures = true
+}
