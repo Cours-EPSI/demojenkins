@@ -19,7 +19,7 @@ public class CalculatorTest extends TestCase {
     public void testMult() {
         int a = 5;
         int b = 3;
-        assertEquals(15, Calculator.getInstance().sub(a, b));
+        assertEquals(15, Calculator.getInstance().mult(a, b));
     }
 
 
