@@ -9,46 +9,46 @@ public class CalculatorTest {
 
     @Test
     public void testAdd() {
-        int a = 2;
-        int b = 3;
-        assertEquals(5, Calculator.getInstance().add(a, b));
+        int valueA = 2;
+        int valueB = 3;
+        assertEquals(5, Calculator.getInstance().add(valueA, valueB));
     }
 
     @Test
     public void testSub() {
-        int a = 5;
-        int b = 3;
-        assertEquals(2, Calculator.getInstance().sub(a, b));
+        int valueA = 5;
+        int valueB = 3;
+        assertEquals(2, Calculator.getInstance().sub(valueA, valueB));
     }
 
     @Test
     public void testMult() {
-        int a = 5;
-        int b = 3;
-        assertEquals(15, Calculator.getInstance().mult(a, b));
+        int valueA = 5;
+        int valueB = 3;
+        assertEquals(15, Calculator.getInstance().mult(valueA, valueB));
     }
 
     @Test
     public void testDiv() {
-        int a = 6;
-        int b = 3;
-        assertEquals(2, Calculator.getInstance().div(a, b));
+        int valueA = 6;
+        int valueB = 3;
+        assertEquals(2, Calculator.getInstance().div(valueA, valueB));
     }
 
     @Test
     public void testIsPair() {
-        int a = 6;
-        int b = 3;
-        assertTrue(Calculator.getInstance().isPair(a));
-        assertFalse(Calculator.getInstance().isPair(b));
+        int valueA = 6;  // is true
+        int valueB = 3;  // not true
+        assertTrue(Calculator.getInstance().isPair(valueA));
+        assertFalse(Calculator.getInstance().isPair(valueB));
     }
 
     @Test
     public void testIsPremier() {
-        int a = 17;
-        int b = 4;
-        assertTrue(Calculator.getInstance().isPremier(a));
-        assertFalse(Calculator.getInstance().isPremier(b));
+        int valueA = 17; // is true
+        int valueB = 4;  // not true
+        assertTrue(Calculator.getInstance().isPremier(valueA));
+        assertFalse(Calculator.getInstance().isPremier(valueB));
     }
 
 
