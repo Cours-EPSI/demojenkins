@@ -1,5 +1,6 @@
 package com.epsi.mycal;
 
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -15,7 +16,7 @@ public class Application {
         availableOperations.add('*');
         availableOperations.add('/');
 
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in, Charset.defaultCharset());
         char operation;
         int value1, value2;
         int result;
